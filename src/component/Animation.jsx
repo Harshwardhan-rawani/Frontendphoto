@@ -17,16 +17,16 @@ function Animation() {
 
    <div className='w-fit animate flex'>
   <div className='flex'>    
-    {[pic1,pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9,pic10].map((e,index)=>{
-           return <div className='m-2 w-44 h-44  object-cover' key={index}><img src={e} className='w-full h-full rounded-sm shadow-sm' alt="" /></div>
+    {[["+",pic1],["-",pic2],["+",pic3],["-",pic4],["+",pic5],["-",pic6],["+",pic7],["-",pic8],["+",pic9],["-",pic10]].map((e,index)=>{
+           return <div className={`m-2 w-44 h-44  object-cover ${e[0]}rotate-2`} key={index}><img src={e[1]} className='w-full h-full rounded-sm shadow-sm' alt="" /></div>
     })}
     
     </div>
    </div>
    <div className='w-fit animate flex'>
   <div className='flex'>    
-    {[pic1,pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9,pic10].map((e,index)=>{
-          return  <div className='m-2 w-44 h-44 object-cover' ><img src={e} className='w-full rounded-sm shadow-sm h-full' alt="" /></div>
+    {[["+",pic1],["-",pic2],["+",pic3],["-",pic4],["+",pic5],["-",pic6],["+",pic7],["-",pic8],["+",pic9],["-",pic10]].map((e,index)=>{
+           return <div className={`m-2 w-44 h-44  object-cover ${e[0]}rotate-2`} key={index}><img src={e[1]} className='w-full h-full rounded-sm shadow-sm' alt="" /></div>
     })}
     
     </div>

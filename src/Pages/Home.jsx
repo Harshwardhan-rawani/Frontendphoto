@@ -9,7 +9,7 @@ function Home() {
       <div className='xl:h-1/6'><Name/></div>
       <div className='xl:h-5/6 mt-4'><Animation/></div>
       <div className='xl:h-5/6 mt-2'><Container/></div>
-   
+      
       
   
     </div>

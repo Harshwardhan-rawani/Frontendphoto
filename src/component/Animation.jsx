@@ -17,15 +17,15 @@ function Animation() {
 
    <div className='flex w-fit animate '>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic1} className='w-full h-full' alt="" /></div>
-    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic2} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic2} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic3} className='w-full h-full' alt="" /></div>
-    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic4} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic4} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic5} className='w-full h-full' alt="" /></div>
-    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic6} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic6} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic7} className='w-full h-full' alt="" /></div>
-    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic8} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic8} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic9} className='w-full h-full' alt="" /></div>
-    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic10} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic10} className='w-full h-full' alt="" /></div>
   
     
    

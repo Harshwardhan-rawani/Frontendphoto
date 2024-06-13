@@ -10,5 +10,5 @@
 }
 @keyframes harsh {
     from{transform: translateX(0%);}
-    to{transform: translateX(-300%);}
+    to{transform: translateX(-75%);}
 }

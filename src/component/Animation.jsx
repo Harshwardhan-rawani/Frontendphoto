@@ -13,9 +13,10 @@ import pic10 from "../assets/pic10.jpg"
 function Animation() {
   return (
    <>
-   <div className='w-100% overflow-hidden relative'>
+   <div className='w-100% overflow-hidden relative flex'>
 
-   <div className='flex w-fit animate '>
+   <div className='w-fit animate flex'>
+  <div className='flex'>    
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic1} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic2} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic3} className='w-full h-full' alt="" /></div>
@@ -26,12 +27,23 @@ function Animation() {
     <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic8} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic9} className='w-full h-full' alt="" /></div>
     <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic10} className='w-full h-full' alt="" /></div>
-  
-    
-   
-    
-    
+    </div>
    </div>
+   <div className='w-fit animate flex'>
+  <div className='flex'>    
+    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic1} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic2} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic3} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic4} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic5} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic6} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic7} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic8} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 rotate-2 object-cover' ><img src={pic9} className='w-full h-full' alt="" /></div>
+    <div className='m-2 w-44 h-44 -rotate-2 object-cover' ><img src={pic10} className='w-full h-full' alt="" /></div>
+    </div>
+   </div>
+   
    <div className='text-center text-xl font-bold absolute bottom-1 w-full bg-[#1f1e1e7f] text-white'>Gallery</div>
    </div>
    </>

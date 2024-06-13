@@ -41,7 +41,7 @@ function Forgot() {
   
   return (
    <>
-    <div className='xl:h-[80vh] xl:w-full flex justify-center items-center'>
+    <div className='h-[80vh] xl:w-full flex justify-center items-center'>
 
 <div className='bg-gray-200 xl:py-5 xl:px-5 xl:w-1/4 shadow-md rounded-md'>
   

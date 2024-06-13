@@ -16,8 +16,8 @@ function Name() {
         
          <div className='xl:px-5 xl:py-7 xl:grid xl:grid-cols-6 xl:gap-20 xl:w-[95%] h-fit'>
             <div className='xl:col-span-2 flex space-x-3 xl:space-x-5'>
-              <Link to={"/uploads"} className='hover:text-black rounded-full xl:w-14 xl:h-14 w-10 h-10 border-2 border-gray-600 flex justify-center items-center'>
-                <div  className=' xl:text-2xl md:text-xl text-lg text-gray-500 w-full h-full'>{user ?<img src={`http://localhost:8000/${image}`} className='w-full h-full rounded-full' />:<FaRegUser/>}</div>
+              <Link to={"/uploads"} className='hover:text-black rounded-full xl:w-14 xl:h-14 w-10 h-10 border-2 border-gray-600'>
+                <div  className=' xl:text-2xl md:text-xl text-lg text-gray-500 w-full h-full'>{user ?<img src={`http://localhost:8000/${image}`} className='w-full h-full rounded-full' />:<FaRegUser className='my-2 mx-2'/>}</div>
               </Link>
               <div>
               <p className='xl:text-3xl font-bold col-span-2 text-gray-800'>Welcome.. {username}! </p>

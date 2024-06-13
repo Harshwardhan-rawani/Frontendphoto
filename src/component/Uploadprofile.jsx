@@ -13,7 +13,7 @@ function Uploadprofile() {
         try {
             const formdata = new FormData()
             formdata.append("image",image)
-            const res = axios.post(`${import.meta.env.VITE_SERVER}/`,formdata,{
+            const res = axios.post(`${import.meta.env.VITE_SERVER}/uploads`,formdata,{
                 headers : {
                     'Content-Type': 'multipart/form-data',
                     "Authorization": `Bearer ${token}`,

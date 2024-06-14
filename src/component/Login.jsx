@@ -9,10 +9,6 @@ import axios from 'axios';
 function Login() {
  const navigate = useNavigate()
 
- const navigateAndReload = (path) => {
-   navigate(path)
-   window.location.reload();
- };
   const {login}= useContext(Authcontext)
 
   const [user_data,setData]=useState({
@@ -38,7 +34,7 @@ function Login() {
        toast.success(response.data.message)
        login(response.data.token)
        navigate("/")
- 
+       window.location.reload()
      
       
     } catch (error) {

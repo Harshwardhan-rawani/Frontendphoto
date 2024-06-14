@@ -15,7 +15,7 @@ function Sidenav() {
     const location = useLocation()
     
   return (
-    <div className='bg-gray-800 fixed bottom-0 w-screen xl:static xl:h-screen xl:flex xl:flex-col xl:justify-between xl:pt-24 xl:pb-5 xl:w-full' >
+    <div className='bg-gray-800 z-50 fixed bottom-0 w-screen xl:static xl:h-screen xl:flex xl:flex-col xl:justify-between xl:pt-24 xl:pb-5 xl:w-full' >
       <div className='flex justify-evenly items-center p-3 xl:flex-col '>
                 <div className={`text-lg sm:text-xl md:text-2xl xl:m-3  ${location.pathname === "/"?"text-orange-500":"text-white"} `}><Link className='hover:text-orange-300' to={`/`}><FaHome /></Link></div>
                 <div className={`text-lg sm:text-xl md:text-2xl xl:m-3  text-white`}><Link className='hover:text-orange-300' to={`#`}><FaDraftingCompass /></Link></div>

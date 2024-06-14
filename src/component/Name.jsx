@@ -15,7 +15,7 @@ function Name() {
   return (
     <>
         
-        <div className="xl:grid xl:grid-cols-6 xl:gap-20 xl:w-[95%] h-fit px-3 py-2">
+        <div className="xl:grid xl:grid-cols-6 xl:gap-20 xl:w-[95%] h-fit px-3 py-2 fixed top-0 z-50 w-full bg-[#F6F5F2]">
             <div className='xl:col-span-2 flex items-center space-x-3 xl:space-x-5'>
               <Link to={token?"/uploads":"/login"} className='hover:text-black rounded-full xl:w-14 xl:h-14 w-10 h-10 border-2 border-gray-400'>
                 <div  className=' xl:text-2xl md:text-xl text-lg text-gray-500 w-full h-full'>{user ?<img src={`http://localhost:8000/${image}`} className='w-full h-full rounded-full' />:<FaRegUser className='my-2 mx-2'/>}</div>
@@ -41,6 +41,10 @@ function Name() {
 
  
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
     </>
   )
 }

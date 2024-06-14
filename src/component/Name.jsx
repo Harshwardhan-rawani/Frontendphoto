@@ -11,7 +11,7 @@ function Name() {
   const {user}=useContext(Authusercontext)
   const username = user? user.username : "Guest";
   const image = user ?user.image:"null"
-  const navigate =useNavigate()
+  const navigate = useNavigate();
   return (
     <>
         

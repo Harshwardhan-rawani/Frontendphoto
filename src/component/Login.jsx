@@ -34,7 +34,7 @@ function Login() {
        toast.success(response.data.message)
        login(response.data.token)
        navigate("/")
-       window.location.reload()
+       
      
       
     } catch (error) {

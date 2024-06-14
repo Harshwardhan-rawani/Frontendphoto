@@ -6,6 +6,7 @@ export const Authusercontext = createContext();
 
 export const Authuserprovider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const { token } = useContext(Authcontext);
 
   const fetchData = async () => {
@@ -21,6 +22,9 @@ export const Authuserprovider = ({ children }) => {
       } catch (error) {
         console.log("error on authusercontext", error);
       }
+      finally {
+        setLoading(false);
+      }
     }
   };
 
@@ -34,7 +38,7 @@ export const Authuserprovider = ({ children }) => {
   }, [token]);
 
   return (
-    <Authusercontext.Provider value={{ user }}>
+    <Authusercontext.Provider value={{ user,loading }}>
       {children}
     </Authusercontext.Provider>
   );

@@ -26,7 +26,7 @@ function Photo() {
     
   }
   const fetchdata = async()=>{
-    const res = await axios.get(`https://photogalleryback.onrender.com/getimage`,{
+    const res = await axios.get(`https://photogallery-y9n9.onrender.com/getimage`,{
       headers : {
         "Authorization": `Bearer ${token}`,
       }

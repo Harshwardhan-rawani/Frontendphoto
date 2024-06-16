@@ -17,7 +17,7 @@ import Uploadfiles from './component/Uploadfiles';
 
 export const router = createBrowserRouter([
   {
-    path: 'https://photogalleryfrontenc-vgrv.vercel.app/',
+    path: '/',
     element: <App />,
     children: [
       { path: '/', element: <Home /> },

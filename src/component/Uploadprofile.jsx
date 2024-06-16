@@ -14,7 +14,7 @@ function Uploadprofile() {
         try {
             const formdata = new FormData()
             formdata.append("image",image)
-            const res = await axios.put(`https://photogalleryback.onrender.com/uploads`,formdata,{
+            const res = await axios.put(`https://photogallery-y9n9.onrender.com/uploads`,formdata,{
                 headers : {
                     'Content-Type': 'multipart/form-data',
                     "Authorization": `Bearer ${token}`,

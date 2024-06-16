@@ -26,7 +26,7 @@ function Login() {
       const formdata = new FormData()
       formdata.append("email",user_data.email)
       formdata.append("password",user_data.password)
-       const response = await axios.post(`${import.meta.env.VITE_SERVER}/login`,formdata,{
+       const response = await axios.post(`https://photogalleryback.onrender.com/login`,formdata,{
         headers :{
             'Content-Type': 'application/json'
         }

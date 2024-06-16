@@ -53,7 +53,7 @@ function Photo() {
      {data.map((e,index)=>{
           return <div key={index} className='shadow-md rounded-md w-full h-20 space-y-3 relative hover:border-r-4 hover:border-gray-700 focus:border-gray-700'>
           <div className='h-full w-full flex space-x-3 my-3' onClick={()=>{setimage(e.image)}}>
-              <img src={`http://localhost:8000/${e.image}`} alt="" className='h-full rounded-l-md' />
+              <img src={`https://photogallery-y9n9.onrender.com/${e.image}`} alt="" className='h-full rounded-l-md' />
               <div className='text-lg font-semibold'>{e.title}</div>
           </div>
           <div className='absolute top-0 right-2 text-lg' onClick={()=>deletephoto(e._id)}><MdDeleteOutline /></div>

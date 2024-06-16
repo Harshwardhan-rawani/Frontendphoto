@@ -10,6 +10,7 @@ function Name() {
   const {token,logout}=useContext(Authcontext)
   const {user}=useContext(Authusercontext)
   const username = user? user.username : "Guest";
+  console.log(user)
   const image = user ?user.image:"null"
   const navigate = useNavigate();
   return (

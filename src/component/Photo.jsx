@@ -26,7 +26,7 @@ function Photo() {
     
   }
   const fetchdata = async()=>{
-    const res = await axios.get(`${import.meta.env.VITE_SERVER}/getimage`,{
+    const res = await axios.get(`https://photogalleryback.onrender.com/getimage`,{
       headers : {
         "Authorization": `Bearer ${token}`,
       }

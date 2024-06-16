@@ -10,35 +10,32 @@ export const Authuserprovider = ({ children }) => {
   const { token } = useContext(Authcontext);
 
   const fetchData = async () => {
-    if (token) {
-      try {
-        const res = await axios.get(`${import.meta.env.VITE_SERVER}/`, {
-          headers: {
-            "Authorization": `Bearer ${token}`,
-          },
-        });
-       
-        setUser(res.data.user);
-      } catch (error) {
-        console.log("error on authusercontext", error);
-      }
-      finally {
-        setLoading(false);
-      }
+    try {
+      const res = await axios.get(`${import.meta.env.VITE_SERVER}/`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      setUser(res.data.user);
+    } catch (error) {
+      console.error("Error in Authusercontext:", error);
+      setUser(null); // Ensure user state is reset on error
+    } finally {
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     if (token) {
       fetchData();
-  }
-  else{
-      setUser("")
-  }
+    } else {
+      setUser(null);
+      setLoading(false); // Ensure loading state is updated when no token is present
+    }
   }, [token]);
 
   return (
-    <Authusercontext.Provider value={{ user,loading }}>
+    <Authusercontext.Provider value={{ user, loading }}>
       {children}
     </Authusercontext.Provider>
   );

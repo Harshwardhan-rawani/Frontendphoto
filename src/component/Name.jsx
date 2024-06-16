@@ -8,11 +8,12 @@ import { useNavigate } from 'react-router-dom';
 import { Authusercontext } from '../context/Authuser';
 function Name() {
   const {token,logout}=useContext(Authcontext)
-  const {user}=useContext(Authusercontext)
+  const {user,loading}=useContext(Authusercontext)
   const username = user? user.username : "Guest";
   console.log(user)
   const image = user ?user.image:"null"
   const navigate = useNavigate();
+  if(loading) return <div>loading</div>
   return (
     <>
         

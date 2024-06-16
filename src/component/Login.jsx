@@ -26,11 +26,7 @@ function Login() {
       const formdata = new FormData()
       formdata.append("email",user_data.email)
       formdata.append("password",user_data.password)
-<<<<<<< HEAD
        const response = await axios.post(`https://photogalleryback.onrender.com/login`,formdata,{
-=======
-       const response = await axios.post("https://photogalleryback.onrender.com/login",formdata,{
->>>>>>> d8bf15db9fba2f8d2dc8f8faf71b460e1e3a2142
         headers :{
             'Content-Type': 'application/json'
         }
@@ -49,7 +45,7 @@ function Login() {
   }
   return (
     <>
-<div className='h-[80vh] xl:w-full flex justify-center items-center'>
+<div className='h-[80vh] xl:w-full flex justify-center items-center m-2'>
 
       <div className='bg-gray-200 xl:py-5 xl:px-5 xl:w-1/4 shadow-md rounded-md w-3/4'>
       <div className='flex justify-center w-full'><div><Userls/></div></div>

@@ -26,7 +26,11 @@ function Login() {
       const formdata = new FormData()
       formdata.append("email",user_data.email)
       formdata.append("password",user_data.password)
+<<<<<<< HEAD
        const response = await axios.post(`https://photogalleryback.onrender.com/login`,formdata,{
+=======
+       const response = await axios.post("https://photogalleryback.onrender.com/login",formdata,{
+>>>>>>> d8bf15db9fba2f8d2dc8f8faf71b460e1e3a2142
         headers :{
             'Content-Type': 'application/json'
         }

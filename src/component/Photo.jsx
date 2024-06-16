@@ -43,7 +43,7 @@ function Photo() {
    <>
    <div className={`absolute w-full flex items-center bg-[#151515f7]  justify-center bg-[#F6F5F2]  top-0 h-full z-30 ${image?"block":"hidden"}`}>
     <div className='relative flex justify-center  items-center h-1/2 '>
-    <img src={`http://localhost:8000/${image}`} className='w-full h-full' alt="" />
+    <img src={`https://photogallery-y9n9.onrender.com/${image}`} className='w-full h-full' alt="" />
     <div className='absolute top-2 right-2 font-bold text-3xl' onClick={()=>{setimage(null)}}><RxCross2 /></div>
     </div>
 

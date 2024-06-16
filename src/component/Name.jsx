@@ -13,7 +13,6 @@ function Name() {
   console.log(user)
   const image = user ?user.image:"null"
   const navigate = useNavigate();
-  if(loading) return <div>loading</div>
   return (
     <>
         

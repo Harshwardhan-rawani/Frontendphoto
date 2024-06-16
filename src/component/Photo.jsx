@@ -26,7 +26,7 @@ function Photo() {
     
   }
   const fetchdata = async()=>{
-    const res = await axios.get(`https://photogallery-y9n9.onrender.com/getimage`,{
+    const res = await axios.get(`${import.meta.env.VITE_SERVER}/getimage`,{
       headers : {
         "Authorization": `Bearer ${token}`,
       }
@@ -43,7 +43,7 @@ function Photo() {
    <>
    <div className={`absolute w-full flex items-center  justify-center bg-[#f6f5f288]  top-0 h-full z-30 ${image?"block":"hidden"}`}>
     <div className='relative flex justify-center  items-center h-1/2 '>
-    <img src={`https://photogallery-y9n9.onrender.com/${image}`} className='w-full h-full' alt="" />
+    <img src={`${import.meta.env.VITE_SERVER}/${image}`} className='w-full h-full' alt="" />
     <div className='absolute top-2 right-2 font-bold text-3xl' onClick={()=>{setimage(null)}}><RxCross2 /></div>
     </div>
 
@@ -53,7 +53,7 @@ function Photo() {
      {data.map((e,index)=>{
           return <div key={index} className='shadow-md rounded-md w-full h-20 space-y-3 relative hover:border-r-4 hover:border-gray-700 focus:border-gray-700'>
           <div className='h-full w-full flex space-x-3 my-3' onClick={()=>{setimage(e.image)}}>
-              <img src={`https://photogallery-y9n9.onrender.com/${e.image}`} alt="" className='h-full rounded-l-md' />
+              <img src={`${import.meta.env.VITE_SERVER}/${e.image}`} alt="" className='h-full rounded-l-md' />
               <div className='text-lg font-semibold'>{e.title}</div>
           </div>
           <div className='absolute top-0 right-2 text-lg' onClick={()=>deletephoto(e._id)}><MdDeleteOutline /></div>

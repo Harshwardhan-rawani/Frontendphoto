@@ -12,7 +12,7 @@ export const Authuserprovider = ({ children }) => {
   const fetchData = async () => {
     if (token) {
       try {
-        const res = await axios.get(`https://photogallery-y9n9.onrender.com`, {
+        const res = await axios.get(`${import.meta.env.VITE_SERVER}/`, {
           headers: {
             "Authorization": `Bearer ${token}`,
           },

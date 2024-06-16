@@ -18,7 +18,7 @@ function Uploadphoto() {
       const formdata =new FormData()
       formdata.append("image",data.image)
       formdata.append("title",data.title)
-      const res = await axios.post(`https://photogallery-y9n9.onrender.com/uploadphoto`,formdata,
+      const res = await axios.post(`${import.meta.env.VITE_SERVER}/uploadphoto`,formdata,
         {
           headers:{
                

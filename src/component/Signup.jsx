@@ -29,7 +29,7 @@ const handlesubmit =async(e)=>{
       formdata.append("password",user_data.password)
       formdata.append("confirm_password",user_data.confirm_password)
       formdata.append("phone",user_data.phone)
-      const response = await axios.post(`https://photogallery-y9n9.onrender.com/signup`,formdata,{
+      const response = await axios.post(`${import.meta.env.VITE_SERVER}/signup`,formdata,{
         headers:{
           'Content-Type': 'application/json',
         }

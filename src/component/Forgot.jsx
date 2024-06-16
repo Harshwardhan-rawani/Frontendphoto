@@ -23,7 +23,7 @@ function Forgot() {
       formdata.append("email",data.email)
       formdata.append("password",data.password)
       formdata.append("confirm_password",data.confirm_password)
-      const response = await axios.post(`https://photogallery-y9n9.onrender.com/forgot`,formdata,{
+      const response = await axios.post(`${import.meta.env.VITE_SERVER}/forgot`,formdata,{
   headers:{
     "Authorization": `Bearer ${token}`,
     'Content-Type': 'application/json'

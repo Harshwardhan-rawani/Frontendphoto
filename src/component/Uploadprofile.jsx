@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useState } from 'react'
 import { Authcontext } from '../context/Auth'
+import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom'
 function Uploadprofile() {
   const {token} =useContext(Authcontext)
@@ -20,6 +21,7 @@ function Uploadprofile() {
                     "Authorization": `Bearer ${token}`,
                 }
             })
+            toast.success("Profile Uploaded")
             navigate("/")
             window.location.reload()
             console.log("file uploaded successfully")

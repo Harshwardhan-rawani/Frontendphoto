@@ -23,7 +23,7 @@ function Forgot() {
       formdata.append("email",data.email)
       formdata.append("password",data.password)
       formdata.append("confirm_password",data.confirm_password)
-      const response = await axios.post(`${import.meta.env.VITE_SERVER}/forgot`,formdata,{
+      const response = await axios.put(`${import.meta.env.VITE_SERVER}/forgot`,formdata,{
   headers:{
     "Authorization": `Bearer ${token}`,
     'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ function Forgot() {
    <>
     <div className='h-[80vh] xl:w-full flex justify-center items-center'>
 
-<div className='bg-gray-200 xl:py-5 xl:px-5 xl:w-1/4 shadow-md rounded-md'>
+<div className='bg-gray-200 xl:py-5 xl:px-5 xl:w-1/4 shadow-md rounded-md w-3/4'>
   
   <form className='w-full' onSubmit={handlesubmit}>
     <div className='text-center font-bold xl:text-xl xl:border-b-2'>
@@ -67,7 +67,7 @@ function Forgot() {
     </div>
     <br />
     <div className='flex justify-center'>
-      <button className='xl:py-2 xl:px-5 bg-slate-500 font-bold text-white rounded-md'>Change</button>
+      <button className='xl:py-2 xl:px-5 bg-slate-500 font-bold text-white rounded-md px-3 py-2 mb-3'>Change</button>
     </div>
   </form>
 </div>
